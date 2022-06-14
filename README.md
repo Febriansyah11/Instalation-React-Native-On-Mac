@@ -1,6 +1,6 @@
 <h1>How to instalation React Native On Mac iOS & Android</h1>
 
-<h2>Instalation React Native iOS On Mac</h2>
+<h2>Instalation React Native On Mac</h2>
 
 - open terminal command this line :
 - Install brew copy from this website https://brew.sh/index_id
