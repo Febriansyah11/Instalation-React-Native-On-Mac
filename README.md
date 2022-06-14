@@ -1,6 +1,7 @@
-<h1>How to instalation React Native On Mac &amp; Android</h1>
+<h1>How to instalation React Native On Mac iOS & Android</h1>
 
 <h2>Instalation React Native iOS On Mac</h2>
+
 - open terminal command this line :
 - Install brew copy from this website https://brew.sh/index_id
 - brew --version
@@ -53,13 +54,9 @@
 - running command npm start then 
 - add new terminal, and command npx react-native run-android 
        note : if you getting error like :
-       (Unable to make field private final java.lang.String java.io.File.path accessible: module java.base does not "opens java.io" to unnamed module @62081f85)
-       follow this step :
-	- check compatible yout java(jdk) and gradlew in https://docs.gradle.org/current/userguide/compatibility.html 
-        - if your jdk version 17, use this line to change  distributionUrl = https\://services.gradle.org/distributions/gradle-7.3-all.zip (location : \android\gradle\wrapper)
+       (Unable to make field private final java.lang.String java.io.File.path accessible: module java.base does not "opens java.io" to unnamed module @62081f85) follow this step : 
+       - check compatible yout java(jdk) and gradlew in https://docs.gradle.org/current/userguide/compatibility.html 
+       - if your jdk version 17, use this line to change  distributionUrl = https\://services.gradle.org/distributions/gradle-7.3-all.zip (location : \android\gradle\wrapper)
 
 
 - dont’ forget to SMILE :D
-
-
-
