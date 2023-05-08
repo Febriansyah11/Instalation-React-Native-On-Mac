@@ -5,7 +5,6 @@
 - open terminal command this line :
 - Install brew copy from this website https://brew.sh/index_id
 - brew --version
-- git --version
 - brew install git
 - git --version
 - brew install node
@@ -30,7 +29,6 @@
 
 - Instal brew https://brew.sh/index_id
 - brew —-version
-- git —version
 - brew install git
 - git —version
 - brew install node
