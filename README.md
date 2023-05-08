@@ -18,7 +18,7 @@
 - click Tab Locations => click Command Line Tools, and select XCODE version,
 - click Tab Components => download simulator =>
 - If the latest iOS version is 16.XX, my advice is to download 2 or 3 versions below, namely iOS version 13.XX or 14.XX, because it’s stable version, if you download lastest version not a problem for me :V
-- open terminal command => gem install -n /usr/local/bin ffi cocoapods ( if you get error no have permission, you run this command ) : sudo sudo gem install -n /usr/local/bin ffi cocoapods
+- open terminal command => gem install -n /usr/local/bin ffi cocoapods, if you get error no have permission, you run this command "sudo gem install -n /usr/local/bin ffi cocoapods"
 - pod --version
 - now you can testing create new project using commad npx react-native init newProject
 - done..
