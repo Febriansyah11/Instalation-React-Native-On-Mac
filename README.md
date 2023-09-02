@@ -46,7 +46,7 @@ if you got an error about activesupport version, you should type this command fi
 	export PATH=$PATH:$ANDROID_HOME/emulator
 	export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-- save and close this file
+- save and close the file
 - now open Android Studio => clik More Actions => click SDK Manager => click Languages & Framework => click Android => click SDK Platforms => select android version what's your need => click Apply and download
 
 - now you can testing create new project using command "npx react-native init newProject"
