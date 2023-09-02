@@ -17,12 +17,13 @@
 - click the xcode text in the top left corner => clik Preferences => then
 - click Tab Locations => click Command Line Tools, and select XCODE version,
 - click Tab Components => download simulator =>
-- If the latest iOS version is 16.XX, my advice is to download 2 or 3 versions below, namely iOS version 13.XX or 14.XX, because it’s stable version, if you download lastest version not a problem for me :V
-- open terminal command => gem install -n /usr/local/bin ffi cocoapods, if you get error no have permission, you run this command "sudo gem install -n /usr/local/bin ffi cocoapods"
+- If the latest iOS version is 16.XX, my advice is to download 2 or 3 versions below, namely iOS version 13.XX or 14.XX, because it’s stable version, if    you download lastest version not a problem for me :V
+- open terminal command => gem install -n /usr/local/bin ffi cocoapods, if you get error no have permission, you run this command "sudo gem install -n /usr/local/bin ffi cocoapods" // it will take a few minutes
+if you got an error about activesupport version, you should type this command first "sudo gem install activesupport -v 6.1.7.6", pay attention to the version requested when you get an error "activesupport", maybe the version requested is different from this, after run install activesupport, you can try this command again"gem install -n /usr/local/bin ffi cocoapods, if you get error no have permission, you run this command "sudo gem install -n /usr/local/bin ffi cocoapods" 
 - pod --version
-- now you can testing create new project using commad npx react-native init newProject
-- done..
-- dont forget to dowload VSCODE :D and runinng npx react-native run-ios..
+- now you can testing create new project using commad "npx react-native init newProject"
+- run ios project by command "npx react-native run-ios"
+
 
 
 <h2>Instalation React Native Android On Mac</h2>
