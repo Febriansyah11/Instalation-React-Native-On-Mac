@@ -5,13 +5,13 @@
 - open terminal command this line :
 - Install brew copy from this website https://brew.sh/index_id
 - brew --version
-<br>
+
 - brew install node
 - node --version
 - npm --version
-<br>
+
 - brew install watchman
-<br>
+
 - now open Appstore download XCODE, then install,
 - while the installation is in progress, they ask to install ROSETTA or not now, this step is optional, I clicked not now, because there is no need for now.
 - open XCODE
@@ -19,11 +19,11 @@
 - click Tab Locations => click Command Line Tools, and select XCODE version,
 - click Tab Components => download simulator =>
 If the latest iOS version is 16.XX, my advice is to download 2 or 3 versions below, namely iOS version 13.XX or 14.XX, because it’s more stable version, exactly, it's up to you
-<br>
+
 - open terminal command => gem install -n /usr/local/bin ffi cocoapods, if you get error no have permission, you run this command "sudo gem install -n /usr/local/bin ffi cocoapods" // it will take a few minutes
 if you got an error about activesupport version, you should type this command first "sudo gem install activesupport -v 6.1.7.6", pay attention to the version requested when you get an error "activesupport", maybe the version requested is different from this, after run install activesupport, you can try this command again"gem install -n /usr/local/bin ffi cocoapods, if you get error no have permission, you run this command "sudo gem install -n /usr/local/bin ffi cocoapods" 
 - pod --version
-<br>
+
 - now you can testing create new project using commad "npx react-native init newProject"
 - run ios project by command "npx react-native run-ios"
 
