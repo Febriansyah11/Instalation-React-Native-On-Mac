@@ -1,16 +1,16 @@
 <h1>How to instalation React Native On Mac iOS & Android</h1>
 
-<h2>Instalation React Native iOS On Mac</h2>
-
-- open terminal command this line :
+open terminal and follow this following comman
 - Install brew copy from this website https://brew.sh/index_id
 - brew --version
 
 - brew install node
 - node --version
 - npm --version
-
 - brew install watchman
+
+  
+<h2>Instalation React Native iOS On Mac</h2>
 
 - now open Appstore download XCODE, then install,
 - while the installation is in progress, they ask to install ROSETTA or not now, this step is optional, I clicked not now, because there is no need for now.
@@ -25,40 +25,35 @@ if you got an error about activesupport version, you should type this command fi
 - pod --version
 
 - now you can testing create new project using commad "npx react-native init newProject"
-- run ios project by command "npx react-native run-ios"
+- cd newProject
+- cd ios
+- run "pod install"
+- cd ..
+- run ios project by command "npx react-native run-ios" or simply by "npm start" then press "i" to run iOS emulator
 
 
 
 <h2>Instalation React Native Android On Mac</h2>
 
-- Instal brew https://brew.sh/index_id
-- brew —-version
-- brew install git
-- git —version
-- brew install node
-- node —version
-- npm —version
-- brew install watchman
-- brew install --cask adoptopenjdk/openjdk/adoptopenjdk11
+- brew tap homebrew/cask-versions
+- brew install --cask zulu11
+- brew info --cask zulu11
 - now open Safari or your other website download Android Studio dmg version Mac(64-bit, ARM), then install,
-- open terminal, if you are using zsh then command ~/.zprofile or ~/.zshrc, command like “ open ~/.zprofile “.
-- now add config in this file, not replace :
+
+- open terminal, if you are using zsh then command ~/.zprofile or ~/.zshrc, command like “open ~/.zprofile“.
+- now add this config:
 	export ANDROID_HOME=$HOME/Library/Android/sdk
 	export PATH=$PATH:$ANDROID_HOME/emulator
-	export PATH=$PATH:$ANDROID_HOME/tools
-	export PATH=$PATH:$ANDROID_HOME/tools/bin
 	export PATH=$PATH:$ANDROID_HOME/platform-tools
+
 - save and close this file
-- now open Android Studio => clik More Options => click AVD Manager => Creative Virtual Device => Phone => Choose Emulator => Next => Download Android version (my advice is to download 2 or 3 versions below from latest, then
-- click finish => select android downloaded version => click next => then running emulator
-- now you can testing create new project using commad npx react-native init newProject
-- open your newProject in VSCODE
-- running command npm start then 
+- now open Android Studio => clik More Actions => click SDK Manager => click Languages & Framework => click Android => click SDK Platforms => select android version what's your need => click Apply and download
+
+- now you can testing create new project using command "npx react-native init newProject"
+- cd newProject
+- cd android
+- run "./gradlew clean"
+- cd ..
+- run "npx react-native run-android" or simply run "npm start" then press "a" to run android emulator
 - add new terminal, and command npx react-native run-android 
-       note : if you getting error like :
-       (Unable to make field private final java.lang.String java.io.File.path accessible: module java.base does not "opens java.io" to unnamed module @62081f85) follow this step : 
-       - check compatible yout java(jdk) and gradlew in https://docs.gradle.org/current/userguide/compatibility.html 
-       - if your jdk version 17, use this line to change  distributionUrl = https\://services.gradle.org/distributions/gradle-7.3-all.zip (location : \android\gradle\wrapper)
-
-
-- dont’ forget to SMILE :D
+if you got an error about "sdk location not found" read this "https://stackoverflow.com/questions/27620262/sdk-location-not-found-define-location-with-sdk-dir-in-the-local-properties-fil"
